@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+  <datamodel type="IDA">
+    <inputs>
+      <ldm_path>論理モデル.ldm</ldm_path>
+<!--      <pdm_path>物理データモデル.dbm</pdm_path>-->
+<!--      <ddm_path>DomainModel.ddm</ddm_path>-->
+<!--      <ndm_path>WordModel.ndm</ndm_path>-->
+    </inputs>
+  </datamodel>
+	<faces>
+    <face value="dummy">
+      <!--  optionのkey属性は、faceに対するメソッド呼び出しになります
+      この例の場合だと、dummy.opt1(val1) を実行することになります。 -->
+      <option key="opt1" value="val1" />
+    </face>
+	</faces>
+</config>
