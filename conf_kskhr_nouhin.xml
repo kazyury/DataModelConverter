@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+  <datamodel type="IDA">
+    <inputs>
+<!--      <ldm_path>人事OPEN論理データモデル.ldm</ldm_path>-->
+      <pdm_path>人事OPEN物理データモデル.dbm</pdm_path>
+      <ddm_path>DomainModel.ddm</ddm_path>
+      <ndm_path>WordModel.ndm</ndm_path>
+    </inputs>
+  </datamodel>
+	<faces>
+<!--    <face value="table_list"> </face>-->
+<!--    <face value="dml">-->
+<!--        <option key="schema" value="JINJI" />-->
+<!--        <option key="table" value="EQ_KZKJH" />-->
+<!--    </face>-->
+    <face value="dummy">
+      <!--  optionのkey属性は、faceに対するメソッド呼び出しになります
+      この例の場合だと、tableList.opt1(val1) を実行することになります。 -->
+      <option key="opt1" value="val1" />
+    </face>
+    <face value="ksk_hr_nouhin">
+    </face>
+<!-- 
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_APCNTRLMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_B" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_BATCHPARAMKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_CDMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_CHCKLST" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_CHHY_FLSKSKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_CHKYKSH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_CHSSHT" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_CHSSHTSTSMNNY" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_CHSSK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_EK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HKN_BNSHTS" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HKYHY" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNMDRKJH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNMDRKJH_TMP" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNNDRKJH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNNDRKJH_TMP" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNNKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNYDLCHSHTSCLMN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNYDLCHSHTSJKN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNYDLCHSHTSJKNMS" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNYDLCHSHTSPTTRN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNYDLCLMNMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNYDLCMBNTNMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNYDLKTCHSHTSCLMNMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_HNYDLTBLMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_IDNDT" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_JKNBNGKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_JKNHYSHTSRYKKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_JKNSHKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_JMKT" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_K" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KFBNGKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KKR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KKZDKJKNRKMK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNGN_SHKN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNGN_SSK_SHKM" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNGNGBTG" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNGNSTTKNR_SHKNTN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNKJTSHDKBN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNKJTSHDKBNHNKTDK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNSHCD" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNSHCDSHS" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNSHCHHYNSTSKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNSHJKSHKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNSHKKK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNSHKKKCHWKJH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNSHKMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KNSHRRK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KRYSHDATATSH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KRYSHDATATSHSGY" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KT" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KYKKNRKMK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KYTSCDMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KYTSDWNLDFLKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KYTSGYMINSTSCHHYKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KZKJH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_KZKJHHNKTDK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_MGRDRKJH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_NNDMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_PGTNNSTSSTTSKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_RSN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SBSYSTM" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHBNRKJH_HNBN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHBNRKJH_TMP" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHHYMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHHYSHKDT" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHHYSKSKNGNKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHIKNGKK_SHKK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHIKNGKK_SHKK_HNKTDK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHIKNKHNJH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHIKNKJ" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHKKY" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHKM" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHKNKKNCHKYKSH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHKNKKNKA" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHKNKKNSHKM" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHKNSYKBTSKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHNCHKJKYSHK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHNJSHNKKSH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHNJSHNKKSHHNKTDK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHNJSHNKKSHINSTCHHYKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHNJSHNKKSHKNSHRRK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHNJSHNKKSHKNSHRRKHNKTDK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHOKNKHNJH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHOKNKHNJH_TMP" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHOKNSHSHN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHRJKYJH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHTSRYKSHHYFLKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SHTSRYKSHHYKNR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SKSKKN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SKSTSHSH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SSHNKNKJTSHDKBN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SSHNKZKJH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SSHNSHIKNGKK_SHKK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SSHNSHNJSHNKKSH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SSHNSHNJSHNKKSHKNSHRRK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SSLG" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_STSMNSNTKSHNY" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SYHYKMKCD" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SYHYKMKCDWRT" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_SYHYKMKMSTR" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_TDFKN" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_TRMTMK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_TRMTMSKK" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_TSHCHSHKKSHKHNJH" />
+    </face>
+    <face value="dml">
+        <option key="schema" value="JINJI" />
+        <option key="table" value="EQ_TSHSHCHSHTJKN" />
+    </face>
+-->
+	</faces>
+</config>

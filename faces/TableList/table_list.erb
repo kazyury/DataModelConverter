@@ -1,0 +1,4 @@
+スキーマ,テーブル名,ラベル,LOB列を持つ,自動生成列を持つ,インデックス表スペース,レギュラー表スペース,LOB表スペース
+<% pdm[:table].each do |tab| -%>
+<%=tab.schema_name %>,<%= tab.name %>,<%= tab.label %>,<%= BooleanUtil.y_blank(tab.has_lob_column?) %>,<%= BooleanUtil.y_blank(tab.has_identity_column?) %>,<%= tab.index_tablespace_name %>,<%= tab.regular_tablespace_name %>,<%= tab.lob_tablespace_name %>
+<% end -%>
